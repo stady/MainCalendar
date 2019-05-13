@@ -512,18 +512,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             return true;
         }
-        else if (id == R.id.action_shifts_work){
-            // 查看轮班记录列表
-            Intent intent = new Intent(this, ShiftsWorkRecordList.class);
-            startActivityForResult(intent, ShiftsWorkRecordRequestCode);
-            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-            return true;
-        }
+//        else if (id == R.id.action_shifts_work){
+//            // 查看轮班记录列表
+//            Intent intent = new Intent(this, ShiftsWorkRecordList.class);
+//            startActivityForResult(intent, ShiftsWorkRecordRequestCode);
+//            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//            return true;
+//        }
         else if (id == R.id.action_settings) {
             startGlobalSetting();
             return true;
         }
-        else if (id == R.id.action_about){
+//        else if (id == R.id.action_about){
+//            Intent intent = new Intent(this, AboutActivity.class);
+//            startActivity(intent);
+//            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+//            return true;
+//        }
+        else if (id == R.id.action_more){
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);

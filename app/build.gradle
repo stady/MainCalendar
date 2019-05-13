@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'Wgj'
-            keyPassword '5075213'
-            storeFile file('D:/Work/Android/JJForEverKey.jks')
-            storePassword '823180671646'
-        }
-    }
+//    signingConfigs {
+//        config {
+//            keyAlias 'Wgj'
+//            keyPassword '5075213'
+//            storeFile file('D:/Work/Android/JJForEverKey.jks')
+//            storePassword '823180671646'
+//        }
+//    }
     compileSdkVersion 23
     buildToolsVersion '25.0.0'
     defaultConfig {
@@ -25,7 +25,7 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             zipAlignEnabled true
-            signingConfig signingConfigs.config
+//            signingConfig signingConfigs.config
         }
     }
     //打包后应用名称
@@ -46,9 +46,13 @@ android {
 }
 
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:design:23.4.0'
     compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile 'com.squareup.okio:okio:1.12.0'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
 }

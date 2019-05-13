@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="天气预报"
+        android:textSize="18dp"
+        android:textColor="@color/currentMonth"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:background="@color/dailyRecord"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="周公解梦"
+        android:textSize="18dp"
+        android:textColor="@color/currentMonth"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:background="@color/dailyRecord"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="今日星程"
+        android:textSize="18dp"
+        android:textColor="@color/currentMonth"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:background="@color/dailyRecord"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="历史上的今天"
+        android:textSize="18dp"
+        android:textColor="@color/currentMonth"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:background="@color/dailyRecord"/>
+</LinearLayout>

@@ -3,8 +3,9 @@
     <string name="app_name">Main日历</string>
     <string name="action_daily">日常记录</string>
     <string name="action_alarm_clock">闹钟记录</string>
-    <string name="action_work_list">轮班记录</string>
+    <!--<string name="action_work_list">轮班记录</string>-->
     <string name="action_settings">系统设置</string>
+    <string name="action_more">更多功能</string>
     <string name="action_about">关于我们</string>
     <string name="unit_year">年</string>
     <string name="unit_month">月</string>
@@ -24,7 +25,7 @@
     <string-array name="record_type">
         <item>闹钟</item>
         <item>日常记录</item>
-        <item>轮班记录</item>
+        <!--<item>轮班记录</item>-->
     </string-array>
 
     <!-- 公用的字符串 -->
