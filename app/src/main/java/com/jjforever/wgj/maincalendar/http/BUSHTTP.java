@@ -157,7 +157,7 @@ public class BUSHTTP {
      * @param keywords 关键词
      * @param callBack
      */
-    public static void fetchDream(String keywords,final FetcherCallBack<Dream> callBack){
+    public static void fetchDream(String keywords,final FetcherCallBack<List<Dream>> callBack){
         String url = URL.URL_DREAM + keywords;
         HttpUtil.httpGet(url, new FetcherCallBack<String>() {
             @Override
@@ -169,7 +169,7 @@ public class BUSHTTP {
                     String body = jsonObject.optString("data");
                     if (code == 0){
                         if (callBack != null) {
-                            Dream data = JSON.parseObject(body,Dream.class);
+                            List<Dream> data = JSON.parseArray(body,Dream.class);
                             callBack.fetcherSuccess(data);
                         }
                     }else{
