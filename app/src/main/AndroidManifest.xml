@@ -57,6 +57,27 @@
         <activity
             android:name=".MoreActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DreamActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StartListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StarDetaiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CityListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WeatherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TodayHistoryListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TodayHistoryDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service android:name=".services.CalendarService" />
 

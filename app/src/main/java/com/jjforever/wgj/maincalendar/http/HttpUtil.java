@@ -14,7 +14,7 @@ public class HttpUtil {
 //1.创建OkHttpClient对象
         OkHttpClient okHttpClient = new OkHttpClient();
         //2.创建Request对象，设置一个url地址（百度地址）,设置请求方式。
-        Request request = new Request.Builder().url("").method("GET",null).build();
+        Request request = new Request.Builder().url(url).method("GET",null).build();
         //3.创建一个call对象,参数就是Request请求对象
         final Call call = okHttpClient.newCall(request);
         //4.同步调用会阻塞主线程,这边在子线程进行
@@ -25,10 +25,13 @@ public class HttpUtil {
                     //同步调用,返回Response,会抛出IO异常
                     Response response = call.execute();
                     if (callBack!=null){
-                        callBack.fetcherSuccess(response.body());
+                        callBack.fetcherSuccess(response.body().string());
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
+                    if (callBack!=null){
+                        callBack.fetcherFail(-1,"网络错误");
+                    }
                 }
             }
         }).start();

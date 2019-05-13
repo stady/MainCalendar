@@ -530,7 +530,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            return true;
 //        }
         else if (id == R.id.action_more){
-            Intent intent = new Intent(this, AboutActivity.class);
+            Intent intent = new Intent(this, MoreActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             return true;

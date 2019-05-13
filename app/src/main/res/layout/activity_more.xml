@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
 
     <TextView
+        android:id="@+id/weather_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center"
@@ -14,6 +17,7 @@
         android:layout_height="0.33dp"
         android:background="@color/dailyRecord"/>
     <TextView
+        android:id="@+id/dream_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center"
@@ -24,6 +28,7 @@
         android:layout_height="0.33dp"
         android:background="@color/dailyRecord"/>
     <TextView
+        android:id="@+id/star_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center"
@@ -34,6 +39,7 @@
         android:layout_height="0.33dp"
         android:background="@color/dailyRecord"/>
     <TextView
+        android:id="@+id/history_btn"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center"

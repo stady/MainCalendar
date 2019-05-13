@@ -35,7 +35,7 @@ public class ShiftsWorkRecordList extends ToolBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record_list);
-        setTitle(getResources().getString(R.string.action_work_list));
+//        setTitle(getResources().getString(R.string.action_work_list));
         showOkBtn(false);
         setOkBtnImage(R.drawable.icon_delete);
         setView();
