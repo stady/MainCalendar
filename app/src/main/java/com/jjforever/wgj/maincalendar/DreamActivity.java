@@ -65,6 +65,7 @@ public class DreamActivity extends ToolBarActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
+
                             if (!TextUtils.isEmpty(msg)){
                                 Toast.makeText(DreamActivity.this,msg,Toast.LENGTH_LONG).show();
                             }else{
