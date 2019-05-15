@@ -25,4 +25,22 @@ public class DemoData {
         starList.add("双鱼座");
         return starList;
     }
+
+
+    public static List<String> getCityList(){
+        List<String> starList = new ArrayList<>();
+        starList.add("北京");
+        starList.add("上海");
+        starList.add("杭州");
+        starList.add("广州");
+        starList.add("深圳");
+        starList.add("天津");
+        starList.add("西安");
+        starList.add("沧州");
+        starList.add("杭州");
+        starList.add("南京");
+        starList.add("重庆");
+        starList.add("黑龙江");
+        return starList;
+    }
 }

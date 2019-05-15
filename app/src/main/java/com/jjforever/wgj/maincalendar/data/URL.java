@@ -22,7 +22,7 @@ public class URL {
     // 4/16 格式 4月16日  4月6日 格式为 4/6 不要加0
     //https://api.shenjian.io/todayOnhistory/queryEvent?appid=03d989c4d42c3d8cae555659892adfdd&date=4/16
     public static  String URL_History = BASE_API + "/todayOnhistory/queryEvent?appid="
-            +APP_ID + "&date=";
+            +"03d989c4d42c3d8cae555659892adfdd" + "&date=";
 
     // URL_History 接口返回的eid date
     //https://api.shenjian.io/todayOnhistory/queryDetail?appid=03d989c4d42c3d8cae555659892adfdd&date=17420
